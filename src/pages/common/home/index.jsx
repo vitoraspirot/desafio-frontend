@@ -19,7 +19,7 @@ export function Home() {
           </Typography>
 
           <Typography variant="h5" color="grey" textAlign="center">
-            Faça login e matricule-se nas turmas dispoíveis para você.
+            Faça login e matricule-se nas turmas disponíveis para você.
           </Typography>
         </Stack>
       </Main>

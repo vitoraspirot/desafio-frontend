@@ -10,7 +10,7 @@ export function Footer() {
           padding="24px"
           textAlign="center"
         >
-          Designed by Vitor Aspirot
+          Designed and developed by Vitor Aspirot, Angelo and Wesley Rocha
         </Typography>
       </Stack>
     </AppBar>
