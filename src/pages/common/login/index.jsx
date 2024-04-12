@@ -1,6 +1,6 @@
 import { Button, Stack, Typography } from "@mui/material";
-import { Header } from "../../../components/header";
-import { Main } from "../../../components/main";
+import { Header } from "../../../components/Header";
+import { Main } from "../../../components/Main";
 import { useNavigate } from "react-router-dom";
 
 export function Login() {

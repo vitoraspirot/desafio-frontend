@@ -1,7 +1,7 @@
 import { Stack } from "@mui/material";
-import { Header } from "../../../components/header";
-import { Main } from "../../../components/main";
-import { CardButton } from "../../../components/cardButton";
+import { Header } from "../../../components/Header";
+import { Main } from "../../../components/Main";
+import { CardButton } from "../../../components/CardButton";
 
 export function StudentsHome() {
   return (
@@ -16,8 +16,12 @@ export function StudentsHome() {
           justifyContent="center"
           marginTop="100px"
         >
-          <CardButton label="Minhas turmas" />
-          <CardButton label="Matricular-se" />
+          <CardButton label="Minhas turmas" route="/estudante/turmas" />
+
+          <CardButton
+            label="Matricular-se"
+            route="/estudante/turmas/matricular"
+          />
         </Stack>
       </Main>
     </>

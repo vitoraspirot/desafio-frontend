@@ -2,8 +2,9 @@ import { StudentsHome } from "../pages/student/home";
 import { CompanyHome } from "../pages/company/home";
 import { Home } from "../pages/common/home";
 import { Login } from "../pages/common/login";
-import { Classes } from "../pages/company/classes";
+import { Classes } from "../pages/common/classes";
 import { RegisterClass } from "../pages/company/registration";
+import { StudentsRegistration } from "../pages/student/registration";
 
 export const routes = [
   {
@@ -29,5 +30,13 @@ export const routes = [
   {
     path: "/instituicao/turmas/cadastrar",
     element: <RegisterClass />,
+  },
+  {
+    path: "/estudante/turmas",
+    element: <Classes />,
+  },
+  {
+    path: "/estudante/turmas/matricular",
+    element: <StudentsRegistration />,
   },
 ];

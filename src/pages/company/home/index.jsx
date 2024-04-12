@@ -1,7 +1,7 @@
 import { Stack } from "@mui/material";
-import { Header } from "../../../components/header";
-import { Main } from "../../../components/main";
-import { CardButton } from "../../../components/cardButton";
+import { Header } from "../../../components/Header";
+import { Main } from "../../../components/Main";
+import { CardButton } from "../../../components/CardButton";
 
 export function CompanyHome() {
   return (

@@ -1,12 +1,7 @@
 import { Button, Stack, Typography } from "@mui/material";
 import PropTypes from "prop-types";
-import { useLocation } from "react-router-dom";
 
-export function ClassSection({ info }) {
-  const location = useLocation();
-
-  const isCompany = location.pathname.includes("instituicao");
-
+export function RegisterClassSection({ info }) {
   return (
     <Stack
       direction="row"
@@ -20,17 +15,11 @@ export function ClassSection({ info }) {
         {info}
       </Typography>
 
-      {isCompany ? (
-        <Button variant="contained">Editar</Button>
-      ) : (
-        <Typography color="black" fontWeight="bold">
-          Matriculado
-        </Typography>
-      )}
+      <Button variant="contained">Matricular</Button>
     </Stack>
   );
 }
 
-ClassSection.propTypes = {
+RegisterClassSection.propTypes = {
   info: PropTypes.string.isRequired,
 };
