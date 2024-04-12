@@ -128,11 +128,7 @@ export function RegisterClass() {
               <MenuItem value="Sexta-feira">Sexta-feira</MenuItem>
             </TextField>
 
-            <Button
-              variant="contained"
-              type="submit"
-              onClick={() => console.log("Click!")}
-            >
+            <Button variant="contained" type="submit">
               Cadastrar
             </Button>
           </Stack>
