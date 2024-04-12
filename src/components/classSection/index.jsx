@@ -1,4 +1,4 @@
-import { Button, Stack, Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import PropTypes from "prop-types";
 import { useLocation } from "react-router-dom";
 
@@ -20,9 +20,7 @@ export function ClassSection({ info }) {
         {info}
       </Typography>
 
-      {isCompany ? (
-        <Button variant="contained">Editar</Button>
-      ) : (
+      {!isCompany && (
         <Typography color="black" fontWeight="bold">
           Matriculado
         </Typography>
