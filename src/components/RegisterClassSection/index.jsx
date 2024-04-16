@@ -1,7 +1,10 @@
 import { Button, Stack, Typography } from "@mui/material";
 import PropTypes from "prop-types";
+import { useState } from "react";
 
 export function RegisterClassSection({ info }) {
+  const [isRegistered, setIsRegistered] = useState(false);
+
   return (
     <Stack
       direction="row"
@@ -15,7 +18,12 @@ export function RegisterClassSection({ info }) {
         {info}
       </Typography>
 
-      <Button variant="contained">Matricular</Button>
+      <Button
+        onClick={() => setIsRegistered(!isRegistered)}
+        variant={isRegistered ? "outlined" : "contained"}
+      >
+        {isRegistered ? "Matriculado" : "Matricular"}
+      </Button>
     </Stack>
   );
 }
